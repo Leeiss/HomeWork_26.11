@@ -29,7 +29,6 @@ namespace HomeWork9.Классы
 
         public void PrintResults()
         {
-            Console.WriteLine($"Итоги игры {game}");
             for (int i = 0; i < teams.Count; i++)
             {
                 Console.WriteLine($"У команды {teams[i].team}: {teams[i].points} балла(ов)");
