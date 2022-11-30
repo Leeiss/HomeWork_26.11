@@ -1,4 +1,4 @@
-﻿using HomeWork_26._11.Классы;
+﻿using HomeWork9.Классы;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,8 +18,6 @@ namespace HomeWork9.Классы
             Game game = new Game(teams);
             game.ChoiceGame(new Beach());
             game.PlayGame();
-            game.ChoiceGame(new MyGame());
-            game.PlayGame();
             game.ChoiceGame(new Fishing());
             game.PlayGame();
             game.ChoiceGame(new Postman());
@@ -30,7 +28,9 @@ namespace HomeWork9.Классы
             game.PlayGame();
             game.ChoiceGame(new Slide());
             game.PlayGame();
-            game.Print();
+            game.ChoiceGame(new MyGame());
+            game.PlayGame();
+            game.PrintResults();
             game.Winner();
             Console.ReadLine();
         }

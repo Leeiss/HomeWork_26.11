@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWork_26._11.Классы
+namespace HomeWork9.Классы
 {
     internal class Game
     {
@@ -24,17 +24,12 @@ namespace HomeWork_26._11.Классы
 
         public void PlayGame()
         {
-            if (game == null)
-            {
-                Console.WriteLine("Такой игры не существует");
-                return;
-            }
-
             game.Play(teams);
         }
 
-        public void Print()
+        public void PrintResults()
         {
+            Console.WriteLine($"Итоги игры {game}");
             for (int i = 0; i < teams.Count; i++)
             {
                 Console.WriteLine($"У команды {teams[i].team}: {teams[i].points} балла(ов)");
